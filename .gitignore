@@ -1,0 +1,64 @@
+# .NET / C# specific
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.log
+*.swp
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+*.csproj.user
+*.dbmdl
+*.bak
+*.mdf
+*.ldf
+.env
+
+# Azure specific
+.azure/
+*.azurepubxml
+*.azurepubxml.user
+
+# Angular specific
+node_modules/
+dist/
+out-tsc/
+*.log
+*.npmrc
+*.package-lock.json
+*.yarn.lock
+*.env
+*.ngsw-config.json
+*.local
+
+# IDEs
+.vs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.ncb
+*.sdf
+*.opensdf
+*.tgz
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
