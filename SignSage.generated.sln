@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignSageAPI", "SignSageAPI", "{10DFE4A8-2AB6-4BEA-9530-E8960BB9C9F6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignSageAPI", "SignSageAPI", "{566573A8-8CE9-4581-8C9B-632825B8F6B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignSageApi", "SignSageAPI\SignSageApi\SignSageApi.csproj", "{52E1B18D-3904-48FD-B96B-E791B1B9DD44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignSageApi", "SignSageAPI\SignSageApi\SignSageApi.csproj", "{2B26417F-76E0-44F5-BB68-C7EF9120774C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52E1B18D-3904-48FD-B96B-E791B1B9DD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52E1B18D-3904-48FD-B96B-E791B1B9DD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52E1B18D-3904-48FD-B96B-E791B1B9DD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52E1B18D-3904-48FD-B96B-E791B1B9DD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B26417F-76E0-44F5-BB68-C7EF9120774C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B26417F-76E0-44F5-BB68-C7EF9120774C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B26417F-76E0-44F5-BB68-C7EF9120774C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B26417F-76E0-44F5-BB68-C7EF9120774C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{52E1B18D-3904-48FD-B96B-E791B1B9DD44} = {10DFE4A8-2AB6-4BEA-9530-E8960BB9C9F6}
+		{2B26417F-76E0-44F5-BB68-C7EF9120774C} = {566573A8-8CE9-4581-8C9B-632825B8F6B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C9450FC-9127-4EDB-830C-576879EDED40}
