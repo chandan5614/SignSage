@@ -7,4 +7,5 @@
     <li><a routerLink="/renewals/dashboard">Renewal Dashboard</a></li>
     <li><a routerLink="/admin/users">User Management</a></li>
   </ul>
+  <li *ngIf="authService.isLoggedIn()"><a (click)="logout()">Logout</a></li>
 </nav>

@@ -1,33 +1,27 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity;
 
-public class User: IdentityUser
+public class User : IdentityUser
 {
-    public string id { get; set; }  // Cosmos DB document ID
-    public string userId { get; set; }  // User-specific ID (e.g., application-level)
+    public string id { get; set; }
+    public string userId { get; set; }
 
-    // Personal and authentication information
-    public string Username { get; set; }  // Unique username
-    public string Email { get; set; }  // User's email address
-    public string PasswordHash { get; set; }  // Hashed password for security
+    public string Username { get; set; }
+    public string Email { get; set; }
+    public string PasswordHash { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public DateTime DateOfBirth { get; set; }  // Optional, for profile purposes
+    public DateTime? DateOfBirth { get; set; }
 
-    // User roles and permissions (for RBAC)
-    public List<string> Roles { get; set; }  // List of role names assigned to the user
-    public List<string> Permissions { get; set; }  // List of explicit permissions granted
+    public List<string> Roles { get; set; }
+    public List<string> Permissions { get; set; }
 
-    // Metadata for tracking and auditing
-    public DateTime CreatedAt { get; set; }  // When the user was created
-    public DateTime UpdatedAt { get; set; }  // When the user was last updated
-    public bool IsActive { get; set; }  // Active or inactive user account
+    public DateTime CreatedAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public bool IsActive { get; set; }
 
-    // Constructor for initializing default values
     public User()
     {
-        id = Guid.NewGuid().ToString();  // Generate a unique id if not provided
+        id = Guid.NewGuid().ToString();
         CreatedAt = DateTime.UtcNow;
         UpdatedAt = DateTime.UtcNow;
         IsActive = true;
