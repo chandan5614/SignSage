@@ -33,6 +33,7 @@ out-tsc/
 *.env
 *.ngsw-config.json
 *.local
+environments
 
 # IDEs
 .vs
@@ -48,7 +49,8 @@ out-tsc/
 *.env.development.local
 *.env.test.local
 *.env.production.local
-*/Environment
+*.environment
+*.environment.prod
 
 # Mac
 .DS_Store
