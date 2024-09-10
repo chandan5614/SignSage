@@ -48,6 +48,7 @@ out-tsc/
 *.env.development.local
 *.env.test.local
 *.env.production.local
+*/Environment
 
 # Mac
 .DS_Store
