@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { AdminRoutingModule } from './admin-routing.module';
 import { UserManagementComponent } from './user-management/user-management.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  { path: 'admin/user-management', component: UserManagementComponent },
+];
 
 @NgModule({
-  declarations: [
-    UserManagementComponent
-  ],
+  declarations: [UserManagementComponent],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    RouterModule.forChild(routes)
   ]
 })
 export class AdminModule { }

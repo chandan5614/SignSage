@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { CustomerPortalRoutingModule } from './customer-portal-routing.module';
 import { CustomerPortalComponent } from './customer-portal/customer-portal.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  { path: 'customer-portal', component: CustomerPortalComponent },
+];
 
 @NgModule({
-  declarations: [
-    CustomerPortalComponent
-  ],
+  declarations: [CustomerPortalComponent],
   imports: [
     CommonModule,
-    CustomerPortalRoutingModule
+    RouterModule.forChild(routes)
   ]
 })
 export class CustomerPortalModule { }
