@@ -1,23 +1,31 @@
-nav {
-  background-color: #f8f9fa;
-  padding: 1rem;
+:host {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  height: 100vh; /* Full height of the viewport */
+  width: 250px; /* Set a fixed width for the navbar */
+  background-color: #f8f9fa; /* Background color */
+  position: fixed; /* Fixes navbar to the left */
+  left: 0; /* Aligns to the left */
+  top: 0; /* Aligns to the top */
+  overflow-y: auto; /* Adds scroll if content overflows */
+}
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-
-    li {
-      display: inline;
-      margin-right: 20px;
-
-      a {
-        text-decoration: none;
-        color: #007bff;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+.nav-item {
+  padding: 15px; /* Space around items */
+  cursor: pointer; /* Change cursor to pointer */
+  &:hover {
+    background-color: #e9ecef; /* Change background on hover */
   }
+}
+
+.navbar-logo {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make it bold */
+  color: #007bff; /* Change color as needed */
+  padding: 15px; /* Add some padding for spacing */
+}
+
+.navbar-logo img {
+  max-width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
 }

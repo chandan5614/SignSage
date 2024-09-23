@@ -1,0 +1,9 @@
+:host {
+  display: flex; /* Use flexbox to layout children */
+}
+
+main {
+  margin-left: 250px; /* Match the width of the navbar */
+  padding: 20px; /* Add padding for spacing */
+  flex-grow: 1; /* Allow main to take up remaining space */
+}
