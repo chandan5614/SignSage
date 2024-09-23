@@ -6,6 +6,7 @@ import { DocumentSignComponent } from './document-sign/document-sign.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', component: DocumentListComponent },
   { path: 'documents', component: DocumentListComponent },
   { path: 'documents/:id', component: DocumentDetailComponent },
   { path: 'documents/sign/:id', component: DocumentSignComponent },

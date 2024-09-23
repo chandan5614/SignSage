@@ -4,6 +4,7 @@ import { UserManagementComponent } from './user-management/user-management.compo
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', component: UserManagementComponent },
   { path: 'admin/user-management', component: UserManagementComponent },
 ];
 

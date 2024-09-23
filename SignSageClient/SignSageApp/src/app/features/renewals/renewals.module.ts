@@ -5,6 +5,7 @@ import { RenewalDetailComponent } from './renewal-detail/renewal-detail.componen
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', component: RenewalListComponent },
   { path: 'renewals', component: RenewalListComponent },
   { path: 'renewals/:id', component: RenewalDetailComponent },
 ];

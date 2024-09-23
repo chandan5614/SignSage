@@ -4,6 +4,7 @@ import { CustomerPortalComponent } from './customer-portal/customer-portal.compo
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', component: CustomerPortalComponent },
   { path: 'customer-portal', component: CustomerPortalComponent },
 ];
 

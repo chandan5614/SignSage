@@ -6,6 +6,7 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', component: TemplateListComponent },
   { path: 'templates', component: TemplateListComponent },
   { path: 'templates/:id', component: TemplateDetailComponent },
   { path: 'templates/create', component: TemplateFormComponent },
