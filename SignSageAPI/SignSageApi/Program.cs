@@ -133,6 +133,9 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("SalesRepPolicy", policy => policy.RequireRole("SalesRep"));
 });
 
+// Register JwtTokenGenerator in DI
+builder.Services.AddScoped<JwtTokenGenerator>();
+
 // Add Swagger and API documentation
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

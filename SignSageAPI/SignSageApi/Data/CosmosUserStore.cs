@@ -138,6 +138,17 @@ public class CosmosUserStore : IUserStore<User>, IUserPasswordStore<User>
         return Task.CompletedTask;
     }
 
+    public Task<bool> GetEmailConfirmedAsync(User user, CancellationToken cancellationToken)
+    {
+        return Task.FromResult(user.EmailConfirmed); // Assuming User model has EmailConfirmed property
+    }
+
+    public Task SetEmailConfirmedAsync(User user, bool confirmed, CancellationToken cancellationToken)
+    {
+        user.EmailConfirmed = confirmed;
+        return Task.CompletedTask;
+    }
+
     public async Task<IdentityResult> UpdateAsync(User user, CancellationToken cancellationToken)
     {
         try
@@ -147,7 +158,6 @@ public class CosmosUserStore : IUserStore<User>, IUserPasswordStore<User>
         }
         catch (Exception ex)
         {
-            // Log exception if needed
             return IdentityResult.Failed(new IdentityError { Description = ex.Message });
         }
     }
