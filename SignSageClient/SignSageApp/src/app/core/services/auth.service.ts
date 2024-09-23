@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { AuthData } from '../models/auth-data.model'; // Adjust the import based on your structure
+import { AuthData } from '../models/auth-data.model';
 
 @Injectable({
   providedIn: 'root'
